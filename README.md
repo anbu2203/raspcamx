@@ -1,4 +1,4 @@
-**Pi-Non: The Pi Camera**      
+**raspcamx: The Pi Camera**      
 This is a camera that can practically take amazing high quality photos and videos using just a raspberry pi!    
 
 <img width="723" height="689" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/e85f2226-e55f-4eaf-b909-c1dfac0671c9" />
