@@ -9,6 +9,73 @@ This uses a Raspberry pi 4 8gb model and a sandisk luxe pendrive to make sure vi
 It uses a Pi HQ Camera which has a sony IMX 477 12.3MP Sensor.      
 It even has interchangeable lenses!    
 I am powering the whole thing using a cuzor mini ups.
+
+## why raspberry pi 4 ##
+
+- Although there are cheaper alternatives available, the Raspberry Pi 4 (8GB) is the most suitable and reliable choice for this project due to the following technical and practical reasons.
+
+1. Full Compatibility with HQ Camera (IMX477)
+
+- The Raspberry Pi 4 offers native and official support for the Raspberry Pi HQ Camera using the CSI interface.
+- Direct hardware-level camera support
+- Stable drivers maintained by Raspberry Pi Foundation
+- No adapters, hacks, or third-party patches required
+- Cheaper boards often lack official IMX477 support, leading to instability, driver issues, or reduced image quality.
+
+2. Required Processing Power for Cinema Firmware
+-This project uses Cinemate2 (built on CinePi), which requires:
+- High CPU performance
+- Sufficient RAM for video buffering
+- Stable I/O for continuous recording
+- The Raspberry Pi 4 provides:
+ Quad-core CPU
+ Up to 8GB RAM
+ Reliable USB 3.0 bandwidth
+
+- Lower-cost boards like Pi Zero, ESP32-CAM, or older SBCs cannot reliably handle this workload without dropped frames or crashes.
+
+3. Reliable High-Speed Storage Support
+- Cinema-style video recording demands fast and stable write speeds.
+- Raspberry Pi 4 has USB 3.0 ports
+- Enables smooth recording to high-speed USB drives
+- Prevents frame loss and file corruption
+- Cheaper alternatives usually have:
+  USB 2.0 only
+  Slower I/O speeds
+  Unstable recording for large video files
+
+4. Software Ecosystem & Community Support :
+
+- Raspberry Pi has the largest open-source ecosystem among SBCs.
+- Well-documented camera stack
+- Active CinePi & Cinemate2 community
+- Easy troubleshooting and updates
+Using cheaper boards would require:
+ Custom drivers
+ Kernel-level modifications
+ Advanced Linux expertise
+ This increases complexity, risk, and development time.
+
+5. Same Learning Curve, Higher Output Quality
+- While cheaper boards may reduce cost, they do not reduce learning effort. Raspberry Pi 4 provides maximum output for the same learning level Better performance with the    same Linux commands and workflows. Efficient use of time and effort Thus, Pi 4 gives better value per hour of learning, not just lower component cost.
+
+6. Stable Power Management with UPS
+- This project uses a Mini UPS to ensure safe shutdown during recording.
+- Raspberry Pi 4 supports proper power-handling
+- Stable under continuous load
+- Prevents SD/USB corruption
+- Cheaper boards often lack:
+ Power stability
+ Proper voltage regulation
+ Safe shutdown support
+
+7. Professional-Grade Output
+- The goal of this project is quality, not just cost reduction.
+- 12.3MP IMX477 sensor
+- Interchangeable lenses
+- Cinema-style video firmware
+Only Raspberry Pi 4 can fully utilize the camera’s capabilities without compromises.
+
 **electrical wiring diagram**
         ┌────────────────────┐
         │   Cuzor Mini UPS   │
@@ -37,6 +104,8 @@ I am powering the whole thing using a cuzor mini ups.
         │                    │
         │ Lens Mount         │
         └────────────────────┘
+![main](/main/wiring%20diagram.jpeg)
+
 Detailed Wiring Connections
 1. Power Connection
 
