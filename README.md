@@ -104,7 +104,7 @@ Only Raspberry Pi 4 can fully utilize the camera’s capabilities without compro
         │                    │
         │ Lens Mount         │
         └────────────────────┘
-![main](/main/wiring%20diagram.jpeg)
+![main](https://github.com/anbu2203/raspcamx/blob/main/wiring%20diagram.jpeg)
 
 Detailed Wiring Connections
 1. Power Connection
